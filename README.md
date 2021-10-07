@@ -1,3 +1,5 @@
 # Cheat Sheet for MongoDB
 
-Last Update: 07.10.2021
+> With basic operations to interact with mongodb on AWS cloud
+
+Last Update: **07.10.2021**

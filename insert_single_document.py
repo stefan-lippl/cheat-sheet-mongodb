@@ -1,5 +1,7 @@
 # https://docs.mongodb.com/guides/server/insert/
 import datetime
+import logging
+
 from db_setup.db_connection import Connect
 
 
@@ -12,12 +14,15 @@ def main():
     db = connection.test
     collection = db.todos
 
-    collection.insert_one(
-        {"name": "Maya",
-         "text": "Bux fixes",
-         "status": "open",
-         "tags": ["python", "c++", "mongodb"],
-         "date": str(datetime.datetime.now())})
+    try:
+        collection.insert_one(
+            {"name": "Albert",
+             "text": "Code Review",
+             "status": "open",
+             "tags": ["c++", "coding"],
+             "date": str(datetime.datetime.now())})
+    finally:
+        logging.info("Document successful created.")
 
 
 if __name__ == main():

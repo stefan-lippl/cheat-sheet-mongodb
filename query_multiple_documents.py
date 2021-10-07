@@ -8,7 +8,8 @@ def main():
     """
     collection = Connect.get_connection().test.todos
 
-    results = collection.find({"tags": "python"})
+    # results = collection.find({"tags": "python"})
+    results = collection.find({})
     for result in results:
         print(result)
 
