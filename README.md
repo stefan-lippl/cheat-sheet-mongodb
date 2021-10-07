@@ -1,2 +1,3 @@
-# cheat-sheet-mongodb
-Same basic operations of MongoDB
+# Cheat Sheet for MongoDB
+
+Last Update: 07.10.2021
